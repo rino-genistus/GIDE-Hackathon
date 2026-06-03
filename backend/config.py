@@ -12,7 +12,7 @@ CHUNK_SIZE    = 1000  # characters
 CHUNK_OVERLAP = 200
  
 # Retrieval
-TOP_K = 3
+TOP_K = 5
  
 # Embedding (local, no internet needed after first download)
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
