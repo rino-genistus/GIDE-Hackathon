@@ -1,4 +1,6 @@
 import os
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_DATASETS_OFFLINE"] = "1"
 import pickle
 import numpy as np
 from sentence_transformers import SentenceTransformer

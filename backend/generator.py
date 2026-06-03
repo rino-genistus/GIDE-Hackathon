@@ -57,10 +57,13 @@ def generate_answer(question: str, context_chunks: list[dict]) -> str:
         )
 
     system_prompt = (
-        "You are a precise document assistant. Answer questions using ONLY the "
-        "provided context. Always state which source document your answer comes "
-        "from. If the context doesn't contain enough information to answer, say "
-        "so clearly — never invent information."
+        "You are a document analyst. You will be given context chunks from multiple "
+        "different company documents. Your job is to synthesize information across ALL "
+        "provided sources to answer the question. Each source is a separate company's "
+        "internal document. For every source provided, extract any relevant information "
+        "and include it in your answer — even if it only partially relates. "
+        "Always cite the source document by name. Never say you lack information if "
+        "the context contains anything even partially relevant."
     )
 
     user_prompt = (
