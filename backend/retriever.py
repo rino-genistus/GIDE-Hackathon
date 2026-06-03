@@ -1,12 +1,13 @@
 import os
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
-os.environ["HF_DATASETS_OFFLINE"] = "1"
 import pickle
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import faiss
 
 from config import INDEX_DIR, TOP_K, EMBEDDING_MODEL
+
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_DATASETS_OFFLINE"] = "1"
 
 # Load the embedding model once at module level
 print(f"Loading embedding model: {EMBEDDING_MODEL}")
@@ -54,7 +55,7 @@ def retrieve(query: str, top_k: int = TOP_K, index_dir: str = INDEX_DIR) -> list
         results.append({
             "chunk":  chunks[idx],
             "source": sources[idx],
-            "score":  float(dist),  # L2 distance — lower is better
+            "score":  float(dist), 
         })
 
     return results
