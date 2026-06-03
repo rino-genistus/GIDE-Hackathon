@@ -1,0 +1,13 @@
+
+# Install with: pip install -r requirements.txt
+# No llama-cpp-python needed — using Ollama instead
+ 
+fastapi
+uvicorn[standard]
+sentence-transformers
+faiss-cpu
+pymupdf
+python-docx
+python-multipart
+numpy
+requests

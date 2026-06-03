@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "l_mpy6by92",
+      "pattern": "multiple_loops",
+      "lesson": "Task took 3 loops. For simple edits, use write_to_file (full rewrite) instead of complex anchored edits.",
+      "frequency": 1,
+      "lastSeen": 1780497653798
+    }
+  ],
+  "skills": [],
+  "metrics": {
+    "totalTasks": 1,
+    "successfulTasks": 1,
+    "avgLoopsPerTask": 3,
+    "totalSkillsUsed": 0
+  }
+}
